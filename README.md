@@ -2,7 +2,7 @@
 Models for dimensionality reduction UKBB (and other) genotyping samples.
 
 We have trained separate dimensionality reduction models for each of the 22 chromosomes (without the sex chromosomes), reducing the dimension of the SNPs to 10% of the input SNPs amount. We have used two models: Deep Auotoencoder (autoencoder) and Principal Component Analysis (PCA). We saved the trained dimensionality reduction models for future use without having to retrain.
-The input SNPs order for each chromosome are available in: https://www.dropbox.com/home/genotyping_dimensionality_reduction_files/SNPs_order
+For the use of the models, the SNPs order is substantial. We saved the SNPs we used and their input order for each chromosome. The files are available in: https://www.dropbox.com/home/genotyping_dimensionality_reduction_files/SNPs_order
 
 ## Autoencoder
 For the Autoencoder, we trained the models with TensorFlow Python package, and the whole model was saved. It includes:
@@ -10,9 +10,10 @@ For the Autoencoder, we trained the models with TensorFlow Python package, and t
 2. The model's weight values
 3. The model's compilation information
 4. The optimizer and its state
+
 The trained Autoencoder models for each chromosome are available in: https://www.dropbox.com/home/genotyping_dimensionality_reduction_files/Autoencoder
 
-In order to load the model use:
+In order to load the model, use:
 ```
 import tensorflow as tf
 from tensorflow import keras
