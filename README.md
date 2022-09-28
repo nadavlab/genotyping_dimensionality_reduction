@@ -41,7 +41,6 @@ The trained PCA models for each chromosome are available in: https://www.dropbox
 In order to load the model use:
 ```
 import pickle
-from sklearn.decomposition import PCA
 
 pca = pickle.load(open("pca_name.pkl",'rb'))
 #where pca_name is the PCA file name
