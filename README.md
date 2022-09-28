@@ -47,4 +47,4 @@ In order to use the model for dimensionality reduction, use:
 ```
 codings = pca.transform(X)
 ```
-Where X is the SNPs data for which dimension reduction is required. X can be a array-like of shape (n_samples, n_features).
+Where X is the SNPs data for which dimension reduction is required. X should be a array-like of shape (n_samples, n_features).
