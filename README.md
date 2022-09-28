@@ -34,7 +34,9 @@ Where X is the SNPs data for which dimension reduction is required. X can be:
 
 ## PCA
 For the PCA, we implemented the models with Scikit-learn package, and saved them using the methods described in model persistence Scikit-Learn.
+
 The trained PCA models for each chromosome are available in: https://www.dropbox.com/home/genotyping_dimensionality_reduction_files/PCA
+
 In order to load the model use:
 ```
 import pickle
